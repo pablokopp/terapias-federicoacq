@@ -1,0 +1,349 @@
+body {
+  margin: 10vh auto;
+  padding: 0;
+  width: 1280px;
+  background-color: #eeeeef;
+  font-family: "Montserrat", sans-serif;
+
+  background-image: url(../imagenes/terapias/body2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* HEADER */
+.logo {
+  text-align: center;
+  margin: 10px 0 10px 15px;
+}
+
+.barraImagen {
+  height: 321px;
+}
+
+.barraImagen img {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.barraImagen img:hover {
+  filter: saturate(140%);
+}
+
+.navegacion {
+  background-color: #d5d7d8;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.navegacion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu li {
+  position: relative;
+  display: inline-block;
+  flex-basis: 25%;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+.menu li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 800;
+}
+
+.menu li a:hover {
+  color: #af69cd;
+}
+
+.submenu {
+  position: absolute;
+  background-color: #d5d7d8;
+  display: none;
+}
+
+.submenu li a {
+  display: block;
+  width: 320px;
+  text-decoration: none;
+  border-bottom: #9fa4a7 3px solid;
+}
+.submenu li:first-child {
+  border-top: #9fa4a7 3px solid;
+}
+
+.menu li:hover .submenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* FOOTER */
+
+footer {
+  height: 120px;
+  margin-top: 72px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  clear: both;
+}
+
+#fraseFooter {
+  flex-basis: 70%;
+}
+
+#fraseFooter p {
+  font-family: "Just Me Again Down Here", cursive;
+  font-size: 50px;
+  text-align: left;
+  padding-left: 10%;
+  margin: 0;
+  user-select: none;
+}
+#fraseFooter p:last-of-type {
+  text-align: right;
+  padding-right: 10%;
+}
+
+.redes {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+.redes img {
+  text-align: right;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.5);
+}
+.redes img:hover {
+  transform: scale(0.6);
+}
+#hechoPor,
+#hechoPor a {
+  text-align: center;
+  margin-bottom: 0;
+  text-decoration: none;
+  margin-top: 50px;
+}
+
+/* TERAPIA */
+
+.terapia h2 {
+  font-family: "Pattaya", sans-serif;
+  font-size: 44px;
+  color: #9032bb;
+  margin-bottom: 0;
+  padding-left: 20px;
+  padding-top: 20px;
+  text-shadow: 3px 3px 2px #af69cd83;
+}
+
+.terapia__caja {
+  background-color: #d5d7d870;
+}
+
+.terapia__caja p {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.terapia__caja strong {
+  color: #af69cd;
+}
+
+.terapia__caja p:first-of-type {
+  padding-top: 20px;
+}
+.terapia__caja p:last-of-type {
+  padding-bottom: 20px;
+}
+.fusion {
+  border-radius: 0 50px 50px 0;
+}
+.fusion img {
+  float: right;
+  border-radius: 0 50px 50px 0;
+}
+.masaje {
+  border-radius: 0 0 50px 50px;
+}
+.masaje ul {
+  font-size: 20px;
+  padding-right: 20px;
+}
+.masaje img {
+  border-radius: 0 0 50px 50px;
+}
+.meditaciones {
+  border-radius: 0 0 50px 50px;
+}
+.meditaciones img {
+  border-radius: 0 0 50px 50px;
+}
+.biomagnetismo {
+  border-radius: 0 0 50px 50px;
+}
+.biomagnetismo img {
+  border-radius: 0 0 50px 50px;
+}
+.armonizaciones {
+  border-radius: 0 50px 50px 0;
+}
+.armonizaciones img {
+  float: right;
+  border-radius: 0 50px 50px 0;
+}
+
+@media only screen and (max-width: 801px) {
+  body {
+    margin: 0 auto;
+    width: 100%;
+  }
+  /* HEADER */
+  .logo {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .barraImagen {
+    height: auto;
+  }
+
+  .navegacion {
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .submenu li a {
+    width: 150px;
+    line-height: 25px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 11px;
+  }
+
+  /* FOOTER */
+
+  footer {
+    height: auto;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #fraseFooter {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #fraseFooter p {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 0;
+    margin: 0;
+    user-select: none;
+  }
+  #fraseFooter p:last-of-type {
+    text-align: center;
+  }
+
+  .redes {
+    flex-basis: none;
+  }
+  .redes img {
+    text-align: right;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.5);
+  }
+  .redes img:hover {
+    transform: scale(0.6);
+  }
+  #fraseFooter {
+    margin-top: 20px;
+  }
+  #hechoPor,
+  #hechoPor a {
+    margin-bottom: 8vh;
+  }
+
+  /* TERAPIA */
+  .terapia {
+    text-align: center;
+  }
+  .terapia h2 {
+    font-size: 34px;
+    padding-left: 0;
+    padding-top: 15px;
+  }
+
+  .terapia__caja p:first-of-type {
+    padding-top: 0px;
+  }
+  .terapia__caja p:last-of-type {
+    padding-bottom: 15px;
+  }
+  .fusion {
+    border-radius: 0;
+  }
+  .fusion img {
+    margin-top: 15px;
+    width: 100%;
+    float: none;
+    border-radius: 0;
+  }
+  .masaje {
+    border-radius: 0;
+  }
+  .masaje ul {
+    font-size: 20px;
+    padding-right: 20px;
+  }
+  .masaje img {
+    width: 100%;
+    border-radius: 0;
+  }
+  .meditaciones {
+    border-radius: 0;
+  }
+  .meditaciones img {
+    width: 100%;
+    border-radius: 0;
+  }
+  .biomagnetismo {
+    border-radius: 0;
+  }
+  .biomagnetismo img {
+    width: 100%;
+    border-radius: 0;
+  }
+  .armonizaciones {
+    border-radius: 0;
+  }
+  .armonizaciones img {
+    margin-top: 15px;
+    width: 100%;
+    float: none;
+    border-radius: 0;
+  }
+}

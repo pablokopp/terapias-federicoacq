@@ -1,0 +1,335 @@
+body {
+  margin: 10vh auto;
+  padding: 0;
+  width: 1280px;
+  background-color: #eeeeef;
+  font-family: "Montserrat", sans-serif;
+
+  background-image: url(../imagenes/talleres/bodyTalleres.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* HEADER */
+.logo {
+  text-align: center;
+  margin: 10px 0 10px 15px;
+}
+
+.barraImagen {
+  height: 321px;
+}
+
+.barraImagen img {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.barraImagen img:hover {
+  filter: saturate(115%);
+}
+
+.navegacion {
+  background-color: #d5d7d8;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.navegacion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu li {
+  position: relative;
+  display: inline-block;
+  flex-basis: 25%;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+.menu li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 800;
+}
+
+.menu li a:hover {
+  color: #0091ea;
+}
+
+.submenu {
+  position: absolute;
+  background-color: #d5d7d8;
+  display: none;
+}
+
+.submenu li a {
+  display: block;
+  width: 320px;
+  text-decoration: none;
+  border-bottom: #9fa4a7 3px solid;
+}
+.submenu li:first-child {
+  border-top: #9fa4a7 3px solid;
+}
+
+.menu li:hover .submenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* FOOTER */
+
+footer {
+  height: 120px;
+  margin-top: 72px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#fraseFooter {
+  flex-basis: 70%;
+}
+
+#fraseFooter p {
+  font-family: "Just Me Again Down Here", cursive;
+  font-size: 50px;
+  text-align: left;
+  padding-left: 10%;
+  margin: 0;
+  user-select: none;
+}
+#fraseFooter p:last-of-type {
+  text-align: right;
+  padding-right: 10%;
+}
+
+.redes {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+.redes img {
+  text-align: right;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.5);
+}
+.redes img:hover {
+  transform: scale(0.6);
+}
+#hechoPor,
+#hechoPor a {
+  text-align: center;
+  margin-bottom: 0;
+  text-decoration: none;
+  margin-top: 50px;
+}
+
+/* TALLERES */
+.talleres__caja h2 {
+  font-family: "Pattaya", sans-serif;
+  font-size: 44px;
+  color: #01579b;
+  margin-bottom: 0;
+  padding-left: 20px;
+  padding-top: 20px;
+  text-shadow: 3px 3px 2px #01589b3f;
+}
+.talleres__caja {
+  background-color: #d5d7d870;
+}
+.talleres__caja p {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.talleres__caja strong {
+  color: #0091ea;
+}
+
+.talleres__caja p:first-of-type {
+  padding-top: 20px;
+}
+.talleres__caja p:last-of-type {
+  padding-bottom: 20px;
+}
+
+.cuencos {
+  border-radius: 0 50px 50px 0;
+}
+.cuencos img {
+  float: right;
+  margin-left: 2px;
+  border-radius: 0 50px 0 50px;
+}
+.rituales {
+  border-radius: 0 50px 50px 0;
+}
+.rituales img {
+  float: right;
+  margin-left: 20px;
+  border-radius: 0 50px 50px 0;
+}
+
+.saturno {
+  border-radius: 0 50px 50px 0;
+}
+.saturno img {
+  float: right;
+  margin-left: 20px;
+  border-radius: 0 50px 50px 0;
+}
+.saturno strong a {
+  text-decoration: none;
+  color: #0091ea;
+}
+.saturno strong a:hover {
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.4);
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 801px) {
+  body {
+    margin: 0 auto;
+    width: 100%;
+    background-position: initial;
+    background-size: 150%;
+    background-repeat: repeat;
+  }
+  /* HEADER */
+  .logo {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .barraImagen {
+    height: auto;
+  }
+
+  .navegacion {
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .submenu li a {
+    width: 150px;
+    line-height: 25px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 11px;
+  }
+
+  /* FOOTER */
+
+  footer {
+    height: auto;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #fraseFooter {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #fraseFooter p {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 0;
+    margin: 0;
+    user-select: none;
+  }
+  #fraseFooter p:last-of-type {
+    text-align: center;
+  }
+
+  .redes {
+    flex-basis: none;
+  }
+  .redes img {
+    text-align: right;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.5);
+  }
+  .redes img:hover {
+    transform: scale(0.6);
+  }
+  #fraseFooter {
+    margin-top: 20px;
+  }
+  #hechoPor,
+  #hechoPor a {
+    margin-bottom: 8vh;
+  }
+  /* TALLERES */
+  .talleres__caja h2 {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-top: 0;
+  }
+
+  .talleres__caja p {
+    text-align: center;
+  }
+
+  .talleres__caja p:first-of-type {
+    padding-top: 0px;
+  }
+
+  .cuencos {
+    border-radius: 0;
+  }
+  .cuencos img {
+    margin-top: 15px;
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0;
+  }
+  .rituales {
+    border-radius: 0;
+  }
+  .rituales img {
+    margin-top: 15px;
+    float: none;
+    margin-left: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+  .saturno {
+    border-radius: 0;
+  }
+  .saturno strong a {
+    text-decoration: none;
+    color: #0091ea;
+  }
+  .saturno img {
+    margin-top: 15px;
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    border-radius: 0;
+  }
+}
