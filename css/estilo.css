@@ -200,7 +200,9 @@ footer {
 .panel5 {
   background-image: url(../imagenes/slide/biomagnetismoFINAL.jpg);
 }
-
+.panel6 {
+  background-image: url(../imagenes/terapias/limpieza1.jpeg);
+}
 .panel__boton {
   filter: opacity(0);
   border: none;
