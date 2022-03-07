@@ -46,12 +46,14 @@ body {
 
 .menu li {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-basis: 25%;
   text-align: center;
   height: 50px;
-  line-height: 50px;
 }
+
 .menu li a {
   display: block;
   width: 100%;
@@ -69,12 +71,16 @@ body {
 .submenu {
   position: absolute;
   background-color: #d5d7d8;
+  top: 100%;
+  left: 0;
+  z-index: 20;
   display: none;
 }
 
 .submenu li a {
   display: block;
   width: 320px;
+  padding: 10px;
   text-decoration: none;
   border-bottom: #9fa4a7 3px solid;
 }

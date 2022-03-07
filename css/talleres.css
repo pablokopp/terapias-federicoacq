@@ -46,11 +46,12 @@ body {
 
 .menu li {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-basis: 25%;
   text-align: center;
   height: 50px;
-  line-height: 50px;
 }
 .menu li a {
   display: block;
@@ -69,12 +70,16 @@ body {
 .submenu {
   position: absolute;
   background-color: #d5d7d8;
+  top: 100%;
+  left: 0;
+  z-index: 20;
   display: none;
 }
 
 .submenu li a {
   display: block;
   width: 320px;
+  padding: 10px;
   text-decoration: none;
   border-bottom: #9fa4a7 3px solid;
 }
@@ -183,7 +188,29 @@ footer {
   margin-left: 20px;
   border-radius: 0 50px 50px 0;
 }
+.rituales_imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  border-radius: 50px;
+}
+.rituales_imagenes img {
+  max-width: 50%;
+}
 
+.elementos {
+  border-radius: 0 50px 50px 0;
+}
+.elementos img {
+  float: right;
+  margin-left: 20px;
+  border-radius: 0 50px 50px 0;
+  width: 50%;
+}
+.elementos p strong a {
+  text-decoration: none;
+  color: inherit;
+}
 .saturno {
   border-radius: 0 50px 50px 0;
 }
@@ -196,7 +223,8 @@ footer {
   text-decoration: none;
   color: #0091ea;
 }
-.saturno strong a:hover {
+.saturno strong a:hover,
+.elementos strong a:hover {
   text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.4);
   transform: scale(1.1);
 }
@@ -329,6 +357,16 @@ footer {
     margin-top: 15px;
     width: 100%;
     float: none;
+    margin-left: 0;
+    border-radius: 0;
+  }
+  .elementos {
+    border-radius: 0;
+  }
+  .elementos img {
+    margin-top: 15px;
+    float: none;
+    width: 100%;
     margin-left: 0;
     border-radius: 0;
   }

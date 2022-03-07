@@ -47,11 +47,12 @@ body {
 
 .menu li {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-basis: 25%;
   text-align: center;
   height: 50px;
-  line-height: 50px;
 }
 .menu li a {
   display: block;
@@ -70,12 +71,16 @@ body {
 .submenu {
   position: absolute;
   background-color: #d5d7d8;
+  top: 100%;
+  left: 0;
+  z-index: 20;
   display: none;
 }
 
 .submenu li a {
   display: block;
   width: 320px;
+  padding: 10px;
   text-decoration: none;
   border-bottom: #9fa4a7 3px solid;
 }
@@ -205,6 +210,20 @@ footer {
 }
 .armonizaciones img {
   float: right;
+  border-radius: 0 50px 50px 0;
+}
+
+.limpieza {
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 0 50px 50px 0;
+}
+.limpieza div {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+.limpieza img {
+  width: 50%;
   border-radius: 0 50px 50px 0;
 }
 
@@ -344,6 +363,14 @@ footer {
     margin-top: 15px;
     width: 100%;
     float: none;
+    border-radius: 0;
+  }
+  .limpieza {
+    flex-direction: column-reverse;
+    border-radius: 0;
+  }
+  .limpieza img {
+    width: 100%;
     border-radius: 0;
   }
 }
