@@ -147,6 +147,9 @@ footer {
 
 /* TERAPIA */
 
+.terapia {
+  margin-top: 2.5rem;
+}
 .terapia h2 {
   font-family: "Pattaya", sans-serif;
   font-size: 44px;
