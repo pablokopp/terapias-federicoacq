@@ -207,7 +207,7 @@ footer {
   border-radius: 0 50px 50px 0;
   width: 50%;
 }
-.elementos p strong a {
+.elementos p strong a, .calma p strong a, .moviendonos p strong a {
   text-decoration: none;
   color: inherit;
 }
@@ -219,15 +219,45 @@ footer {
   margin-left: 20px;
   border-radius: 0 50px 50px 0;
 }
-.saturno strong a {
+.saturno strong a, .calma strong a, .moviendonos strong a{
   text-decoration: none;
   color: #0091ea;
 }
 .saturno strong a:hover,
-.elementos strong a:hover {
+.elementos strong a:hover, .calma strong a:hover, .moviendonos strong a:hover {
   text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.4);
   transform: scale(1.1);
 }
+
+.calma,.moviendonos{
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "title img"
+    ". img";
+  grid-template-columns: 1fr max(50%);
+  grid-template-rows: min-content 1fr;
+  margin-top: 36px;
+  border-radius: 0 50px 0 0;
+}
+
+.calma > img, .moviendonos > img{
+  grid-area: img;
+  aspect-ratio: 1/1;
+  max-width: 100%;
+  border-radius: 0 50px 0 50px;
+}
+
+.calma >h2, .moviendonos > h2{
+  grid-area:title;
+  margin-top: 0;
+}
+
+.calma > p, .moviendonos > p {
+  margin: 0;
+}
+
 @media only screen and (max-width: 801px) {
   body {
     margin: 0 auto;
@@ -369,5 +399,22 @@ footer {
     width: 100%;
     margin-left: 0;
     border-radius: 0;
+  }
+
+  .calma,.moviendonos {
+    grid-template-areas: 
+    "title"
+    "."
+    "img";
+    grid-template-columns: 1fr;
+    border-radius: 0;
+  }
+
+  .calma > img,.moviendonos>img{
+    border-radius: 0;
+  }
+
+  .calma > h2,.moviendonos>h2{
+    padding-top: 16px;
   }
 }
