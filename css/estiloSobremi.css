@@ -318,8 +318,10 @@ h2 {
   }
 
   .redes {
-    flex-basis: none;
+    display: grid;
+    grid-template-areas: ". ."". .";
   }
+  
   .redes img {
     text-align: right;
     transition: all 0.3s ease-in-out;
